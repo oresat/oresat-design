@@ -1,0 +1,7 @@
+exclude: ['README.markdown', 'LICENSE', 'Makefile']
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "base"
