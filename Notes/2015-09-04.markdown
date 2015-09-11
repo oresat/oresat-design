@@ -1,0 +1,29 @@
+# Meeting Notes 2015/09/04
+
+## So what are the bandwidth requirements of this system?
+
+- C3 telemetry is like bits per second. We just don’t care.
+- C3 commands are like tens of [encrypted] bytes, so again, we just don’t care.
+- Glenn says SCADA systems care more about authentication than encryption.
+   - IEEE 1815-2012: DNP3 -- well known, hopefully secure, libraries exist
+   - Kenny thinks the security is strapped on here, and is more overhead than ideal.
+   - Authentication for commands is what we really want anyway, not encryption.
+   - Nathan says we’ll probably need to use a nonce
+   - So this may mean that a command may require a half dozen bidirectional messages
+   - Glenn: data down ALSO needs to be authenticated
+   - Kenny will find a good way of doing this
+- “Most” cubesats are like 10kbps
+- C3 firmware updates are less than 1 MB and should be done in one pass -- given a 5 minute pass, that’s like 3.3 kBps which is 33 kbps with some overhead. Also doesn’t include half-duplex acks.
+- But most microcontrollers have more like 300kB total data, so  in 5 minutes that’s 8kbps.
+- Could dynamically scale bps, but this seems dangerous and not worth it if we spend a lot of time negotiating this.
+- Might not be able to send days of telemetry data; this should store and forward, so this might be MB.
+- Kenny complains that “Secondary system” for the DxWiFi / Linux FC / Video system is useless. “Payload”, for example. Or “Highly Available Processor” and “Heavy Lift Processor”.
+
+
+## Decisions:
+
+- Command packet structure will include
+   - bi-directional authentication (probably based on encrypted nonce exchange)
+   - response data packets include cleartext payload
+- Telemetry data will be sent in the clear, and will be authenticated (authentication for our use only)
+- eMMC cache for logs, and payload firmware update.

@@ -1,0 +1,31 @@
+## Friday 8/21 Notes
+
+- 47 CFR 97.207 / 211 says:  144-146 MHz, 435-438 MHz
+- SWAP: Size, Weight, and Power
+- Why split the radio into 2m/70cm?
+- NASA solution: Electra / Iris / Iris v2
+- http://mstl.atl.calpoly.edu/~bklofas/Presentations/DevelopersWorkshop2014/Duncan_Iris_Deep_Space_Transponder.pdf
+- Requirements
+
+- Behavioral requirements
+   - No solar cells (battery charger fails)
+   - Tumbling fast
+   - Lipo fails, must be able to work from solar only: must be able to transmit beacon from solar power only given tumbling.
+   
+- Antenna
+
+- 1/4 wave against ground plane
+- 1/2 wave as a dipole
+- Two phased dipoles at 90 degrees get rid of nulls from a single dipole
+- Springs, tape measures, and interesting: v shape that acts as cubesat slides *and* as flip up antennas.
+
+
+## Decisions:
+
+- 70 cm -- no substantial gain to use 2m, everything is smaller, and since we have no multipath issues
+- Half duplex is OK
+- 3.3 ms to 1000 km, so comm delay for half duplex is OK (6.6 ms)
+- As isotropic a radiator as possible
+- Thinking of pi/4-QPSK but we don't know.
+- Radio should be digital.
+
