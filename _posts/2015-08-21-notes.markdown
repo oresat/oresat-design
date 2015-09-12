@@ -1,3 +1,7 @@
+---
+title: Notes
+---
+
 ## Friday 8/21 Notes
 
 - 47 CFR 97.207 / 211 says:  144-146 MHz, 435-438 MHz
@@ -11,7 +15,7 @@
    - No solar cells (battery charger fails)
    - Tumbling fast
    - Lipo fails, must be able to work from solar only: must be able to transmit beacon from solar power only given tumbling.
-   
+
 - Antenna
 
 - 1/4 wave against ground plane
@@ -28,4 +32,3 @@
 - As isotropic a radiator as possible
 - Thinking of pi/4-QPSK but we don't know.
 - Radio should be digital.
-

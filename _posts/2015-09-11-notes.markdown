@@ -1,17 +1,19 @@
-## Power Discussions
+---
+title: Power Discussions
+---
 
-We started talking about power so we started with a Google sheet: https://docs.google.com/spreadsheets/d/1U0pZVYygCMxkPNdXr0VBEqq5KxYvYgUe8o8VVQBnHYE/
+We started talking about power so we started with a Google sheet:  <https://docs.google.com/spreadsheets/d/1U0pZVYygCMxkPNdXr0VBEqq5KxYvYgUe8o8VVQBnHYE/>
 
-# Goals
+## Goals
 
-- Minimize power and weight and complexity on the cubesat
+ - Minimize power and weight and complexity on the cubesat
     - Small, lightweight low gain ("bad") deployable antenna
     - No power amp, if we can help it.
-- Don't care about power and weight and complexity on the ground
+ - Don't care about power and weight and complexity on the ground
     - Huge-ass antenna ("big ears")
     - Lots of power
 
-# Radios
+## Radios
 
 Base the design on the KW0x radio chip -- one on CS0, one on a receiver platform at the ground antenna!
 
@@ -30,10 +32,8 @@ Base the design on the KW0x radio chip -- one on CS0, one on a receiver platform
 - Helical anntenna -- seems better (shorter, more pretty :)
    - http://www.i1wqrlinkradio.com/antype/ch30/chiave1000.htm
    - 430-450 MHz, 16 turns, 36 deg @ -3dB, 15.5 dBic, 2.8 m (9 ft) long (w/ 0.6 x 0.6 m mesh)
- 
+
 - Ground pre-amp
    - Advanced Receiver Research P432VDG
    - NF = 0.5 dB, +18 db gain, $90
    - Even better: MSP432VDG-25, which is mast-mounted and 16 dB, $190. Only 16 dB, but it switches automatically for any transmitter under 25W
-
-

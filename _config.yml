@@ -1,4 +1,8 @@
 exclude: ['README.markdown', 'LICENSE', 'Makefile']
+markdown: kramdown
+
+permalink: /:categories/:year-:month-:day/
+
 defaults:
   -
     scope:

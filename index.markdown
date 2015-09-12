@@ -2,12 +2,10 @@
 title: OreSat 0 Design Requirements
 ---
 
-# OreSat 0 Design Requirements
+# Meeting Notes
 
-## High Level Design
-
- 1. Cubesat Formfactor
- 1. Low power microcontroller
-    - Mission Critical
- 1. High power microcomputer
-    - Experments/Science
+<ul>
+{% for note in site.posts %}
+   <li><a href=".{{ note.url }}">{{ note.date | date: "%Y-%m-%d" }}</a></li>
+{% endfor %}
+</ul>
