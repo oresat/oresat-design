@@ -18,3 +18,17 @@ title: OreSat 0 Design Requirements
     {% endcase %}</a></li>
 {% endfor %}
 </ul>
+
+<div markdown="1" style="font-size:0.9em;margin-top:100px;color:#999;" id="newnote">
+[+ New meeting note](https://github.com/oresat/oresat-design/new/gh-pages/_posts?filename=YYYY-MM-DD-notes.markdown)
+</div>
+<script>
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    if (month < 10) month = "0"+month;
+    var day = now.getDay();
+    if (day < 10) day = "0"+day;
+    var meetingnote = year + "-" + month + "-" + day + "-notes.markdown"
+    document.getElementById('newnote').children[0].children[0].href = "https://github.com/oresat/oresat-design/new/gh-pages/_posts?filename="+meetingnote;
+</script>
