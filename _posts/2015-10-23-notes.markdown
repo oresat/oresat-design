@@ -1,0 +1,29 @@
+---
+title: C3 Radio Discussions (again)
+---
+
+- Update on the MK0wx radio system
+- Baker, Glenn: letter to german guy about his experience with telemetry
+- Glenn has been researching, and it sounds like we're doing the right thing
+   - Everyone does OOK morsecode
+   - Using AX.25 (as a datalink layer) on GFSK
+      - Wen over OSI network layer, AX.25 packet formatting
+      - <https://www.tapr.org/pdf/AX25.2.2.pdf>
+- Comms, link budget
+- Balloons (with Eric)
+   - Are Fun.
+   - Can loose things: 2/3 recovered.
+   - Balloon:  <http://kaymontballoons.com/> HAB-1500 (1500 gram) -- 6 lbs (2700 g) maximum
+   - Helium: maybe two flights?
+   - Payload is attached to the parachute which is attached to the balloon.
+   - Spring flight
+   - Payload
+       - Infrastructure: Spot tracker + GoPro3 + custom styrofoam case
+       - C3 radio system + GPS + battery + temperature -- 10 x 10 x 5 cm
+       - BBB + DxWiFi + video + battery
+- Oh yeah, Google Hangouts. Oops.
+- Rad Hard AVR chip: <http://blog.atmel.com/2015/10/21/the-first-ever-rad-tolerant-megaavr-is-out-of-this-world/>
+
+- For ECE practicum project: 436.5 MHz because it's not used by anyone, and it's band.
+
+
