@@ -1,5 +1,7 @@
 # Meeting Notes 2015-11-20
 
+Who: Glenn, Kenny, Devin, Ed, Andrew, Jordan, Tyler
+
 - Glenn sent email to German amateur radio person
 - **DxWiFi**
    - Reviewed Devin’s DxWifi amplifier project proposal (requirements).
