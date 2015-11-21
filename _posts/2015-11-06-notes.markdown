@@ -1,0 +1,25 @@
+## Meeting notes 2015/11/06
+
+Who: K, Katia, Tyler, Baker, Ed, Devin, Jordan, Theo, Eric, Andrew
+
+- Baker did a thermal simulation in Python! W00t! Our first real simulation
+   - IMAGE HERE
+- Eric T: The CS0 chassis should use Al 7072 because [reason](http://www.space.com/30446-nasa-hoverboard-technology-cubesats.html).
+- SatNOGs
+   - Jordan and Katia are working on SatNOGs
+   - Looking to order first parts and 3D print first parts
+- C3 system
+   - Went over latest CS0 C3 system KW0x schematic and board layout from ECE411 practicum group
+   - Theo has the KW0x tool chain up and running
+- DxWiFi
+   - Wuhoo! [We can really do WiFi from space](https://docs.google.com/spreadsheets/d/1QitQvIPwlf3Sn3N1pg1PywyiM__GuMZ6tIb5JUAfHp4/edit?usp=sharing)… with decently realistic antennas and everything.
+   - Devin and Ed are working on 2.4 GHz PA -- looking at "Class D" -- Need to start writing requirement documents
+   
+## TODO FOR NEXT WEEK
+
+- Baker: better thermal simulation
+- Katia and Jordan: start SatNOGS build
+- Katia: monoXtal Si radiation degradation info
+- Coordinate for Friday field trip
+- Baker and Glenn: Letter to German guy
+- Theo: blinking lights with artisanal hand-crafted organic gluten-free free range all natural open source header files
