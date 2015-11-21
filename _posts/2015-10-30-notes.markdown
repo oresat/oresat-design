@@ -1,0 +1,29 @@
+## Meeting 2015-10-30
+
+Who: Jordan, Andrew, Glenn, Baker, Katia, Jordan, ?
+
+- Glenn Found new “New SMAD” has Chapter 25 on Cubesats - Baker is going to scan and post to the CS0 folder
+- Come up with requirements and specs for cubesat.
+- OMG Don’t forget about doing a google hangout you dorks
+- Jordan researched deployables 
+   - esa documentation on cold welding in CS0 folder.
+   - Totally do-able
+   - we are not opening and closing thinks repeatedly so anodizing, clever geometry, and planning to overcome extra stiction effects with our deployment mechanisms.
+   - able to use dissimilar metals also but may not be necessary.
+   - Plan for it to fail
+   - plan for the extra power and extra heat generated.
+
+## ToDo
+
+- Glenn and Baker: contact German fellow
+- Glenn: read and understand link budget, present to us next time
+- Research on CubeSat systems and posting to Resources repo (working reference designs!)
+- Solar cells: Katia
+- Power systems:  Andrew (+ practicum)
+- Ground system: Katia, Jordan
+- Batteries: Andy R.
+- Thermal: Baker
+- Structural: Jordan
+- Antennas: Glenn
+- Radios: Glenn (+ practicum)
+
