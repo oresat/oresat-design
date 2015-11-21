@@ -21,9 +21,10 @@
    - Decided: build a stock SatNOGs and then we’ll mod if from there
    - Whole thing is powered off 12 V, maybe we could use 12V batteries from the LTC for field tests?
    - Oh! Hey! We could make this solar powered
+- **Collaboration stuff**
+   - Everything is terrible - Google docs are good for simulataneous editing but then can't be saved in our site. Markdown is fine but can't do simultaneous editing. We'll use either Google docs as a scratch page for writing shared markdown during meetings and then we'll try using an Etherpad at <http://piratepad.nl/> if that gets obnoxious. What about a script to convert google docs to Markdown?
 
 # TODO
 
 - DxWifi: Glenn: fill out Jan King’s spreadsheet for DxWiFi (2.42 GHz)
 - SatNOGs: Jordan: Build us a SatNOGs. Get Eric to help. Do it NAOOOWWWWWWW.
-
