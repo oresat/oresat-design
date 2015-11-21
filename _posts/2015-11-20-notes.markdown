@@ -1,0 +1,29 @@
+# Meeting Notes 2015-11-20
+
+- Glenn sent email to German amateur radio person
+- **DxWiFi**
+   - Reviewed Devin’s DxWifi amplifier project proposal (requirements).
+   - Discussed link budget
+   - Discussed modulation and bitrates
+   - Here’s a link to a [nice display of the 802.11b data rates](http://www.cs.uccs.edu/~gsc/pub/master/pjfong/UCCS%20Project/Articles/IEEE%20802_11%20&%20IEEE%20802_11b.htm)
+- **C3 system**
+   - Went over ECE 411 Practicum’s design ofKW0x breakout board
+   - 8 PCBs are in from OSH Park, they’re stuffing them this weekend.
+- **SatNOGs**
+   - Jordan has “stuff” including 3D printed stuff.
+   - Went with version 2 of the rotator, not version 3 - might switch later?
+   - Ordered stepper motors
+   - Needs PVC and [NEMA 3 or better enclosure](https://en.wikipedia.org/wiki/NEMA_enclosure_types) 
+   - Trying to figure out what the hell is going on with SatNOGs…. DOCUMENTATION PEOPLES?!
+   - AH: SatNOGs uses a hacked [WiFi AP that has a USB host that talks to a tiny Arduino](https://d17kynu4zpq5hy.cloudfront.net/igi/satnogs/dHldjNYRI3bNjeMc.medium)
+   - Also: v2 doesn’t use the rotation encoders? Maybe we can add them on the ends of the steppers?
+   - Discussed gimbal lock on SatNOGs - shouldn’t have it because we can twist the coax > 360 degrees.
+   - Decided: build a stock SatNOGs and then we’ll mod if from there
+   - Whole thing is powered off 12 V, maybe we could use 12V batteries from the LTC for field tests?
+   - Oh! Hey! We could make this solar powered
+
+# TODO
+
+- DxWifi: Glenn: fill out Jan King’s spreadsheet for DxWiFi (2.42 GHz)
+- SatNOGs: Jordan: Build us a SatNOGs. Get Eric to help. Do it NAOOOWWWWWWW.
+
