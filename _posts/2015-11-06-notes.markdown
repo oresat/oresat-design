@@ -3,7 +3,7 @@
 Who: K, Katia, Tyler, Baker, Ed, Devin, Jordan, Theo, Eric, Andrew
 
 - Baker did a thermal simulation in Python! W00t! Our first real simulation
-   - IMAGE HERE
+   - ![Baker's thermal analysis](https://github.com/oresat/oresat-design/blob/gh-pages/post_assets/baker-thermal-analysis.png)
 - Eric T: The CS0 chassis should use Al 7072 because [reason](http://www.space.com/30446-nasa-hoverboard-technology-cubesats.html).
 - SatNOGs
    - Jordan and Katia are working on SatNOGs
