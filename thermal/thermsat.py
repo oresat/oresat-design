@@ -86,63 +86,54 @@ class thermsat(object):
         cfg.read(cfgfile)
 
         self._sat = ephem.EarthSatellite()
-     
-        if not cfg.has_section('orbit'):
-            raise ValueError("Missing section 'orbit' in config file.")
-        else:
-            orbit = cfg['orbit']
-            angle_format = orbit.pop('angle_format', 'radians')
-            self._sat.name = orbit.pop('name', 'sat')
-            self._sat.catalog_number = orbit.pop('catalog_number', None)
-            self._time = datetime.datetime.now()
-            try:
-                t = orbit.pop('tle') 
-                t = t.split('\n')
-                self._sat = ephem.readtle(*tuple(t))
-            except:
-                for name in paramlist:
-                    try: 
-                        attr = float(orbit.pop(name))
-                        if isinstance(getattr(self, name), ephem.Angle) and angle_format is 'radians':
-                            attr /= ephem.degree
-                        setattr(self, name, attr)
-                    except:
-                        raise ValueError("Orbital specification in config file incomplete.")
-            self.compute(self._time)
+ #####################
+        orbit = cfg['orbit']
+        angle_format = orbit.pop('angle_format', 'radians')
+        self._sat.name = orbit.pop('name', 'sat')
+        self._sat.catalog_number = orbit.pop('catalog_number', None)
+        self._time = datetime.datetime.now()
+        try:
+            t = orbit.pop('tle') 
+            t = t.split('\n')
+            self._sat = ephem.readtle(*tuple(t))
+        except:
+            for name in paramlist:
+                try: 
+                    attr = float(orbit.pop(name))
+                    if isinstance(getattr(self, name), ephem.Angle) and angle_format is 'radians':
+                        attr /= ephem.degree
+                    setattr(self, name, attr)
+                except:
+                    raise ValueError("Orbital specification in config file incomplete.")
+        self.compute(self._time)
+######################
+        thermal = cfg['thermal']
+        self.mass = 0
+        self.thermal_mass = 0
+        start_temp = float(thermal.pop('start_temp', 273.15))
+        for key in thermal:
+            val = thermal.pop(key)
+            mass, c = strftup(val, ',')
+            self.mass += mass
+            self.thermal_mass += mass * c
+        self.heat = start_temp*self.thermal_mass
+################# 
+        radiation = cfg['radiation']
+        total_area = 0
+        area_weighted_absorptivity = 0
+        area_weighted_emissivity = 0
 
-        if not cfg.has_section('thermal'): 
-            raise ValueError("Missing section 'thermal' in config file.")
-        else:
-            thermal = cfg['thermal']
-            self.mass = 0
-            self.thermal_mass = 0
-            start_temp = float(thermal.pop('start_temp', 273.15))
-            for key in thermal:
-                val = thermal.pop(key)
-                mass, c = strftup(val, ',')
-                self.mass += mass
-                self.thermal_mass += mass
-            self.heat = start_temp*self.thermal_mass
-         
-        if not cfg.has_section('radiation'):
-            raise ValueError("Missing section 'radiation' in config file.")
-        else:
-            radiation = cfg['radiation']
-            total_area = 0
-            area_weighted_absorptivity = 0
-            area_weighted_emissivity = 0
-
-            for key in radiation:
-                val = radiation.pop(key)
-                area, absorb, emit = strftup(val, ',')
-                total_area += area
-                area_weighted_absorptivity += area*absorb
-                area_weighted_emissivity += area*emit
-            
-            self.mean_absorptivity = area_weighted_absorptivity / total_area 
-            self.mean_emissivity = area_weighted_emissivity / total_area
-            self.radiating_area = total_area / 10000
-            self.solar_area = self.radiating_area / 6       #dummy assignment, assuming it's a cube
+        for key in radiation:
+            val = radiation.pop(key)
+            area, absorb, emit = strftup(val, ',')
+            total_area += area
+            area_weighted_absorptivity += area*absorb
+            area_weighted_emissivity += area*emit
+        
+        self.mean_absorptivity = area_weighted_absorptivity / total_area 
+        self.mean_emissivity = area_weighted_emissivity / total_area
+        self.radiating_area = total_area / 10000
+        self.solar_area = self.radiating_area / 6       #dummy assignment, assuming it's a cube
 
         self.thermal_functions.append(self.radiation_in)
         self.thermal_functions.append(self.radiation_out)
