@@ -9,11 +9,11 @@
    -- This is the AX.25 digital packet radio beacon sent on the UHF-Band using G3RUH modulation during 10 minute periodic telemetry times. This follows just after the CW beacon. This is intended to be received by the general public.
 
 * ___Engineering Data Uplink___
-   -- This is the data format of the engineering uplink sent on the L-Band for control messages. This is intended to be used only by OreSat.
+   -- This is the data format of the engineering uplink sent on the L-Band for control messages. This is intended to be used only by OreSat. This protocol should follow to some extent guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
 
 * ___Engineering Data Downlink___
    -- This is the data format of the engineering downlink sent on UHF for control responses. The responses would include
-   acquired data and more detailed telemetry. This is intended to be used only by OreSat.
+   acquired data and more detailed telemetry. This is intended to be used only by OreSat. This protocol should follow to some extent guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
 
    
 * ___DxWiFi Uplink___
