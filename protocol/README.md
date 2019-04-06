@@ -13,7 +13,7 @@ These are intended to give beacon data to the general public for amateur radio o
    -- This is the AX.25 digital packet radio beacon sent on the UHF-Band using G3RUH modulation during 10 minute periodic telemetry times. This follows just after the CW beacon.
 
 #### Protocols intended for OreSat only
-These are intended as the engineering command, control and telemetry messages for operating the satellite. These protocols should follow to some extent guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
+These are intended as the engineering command, control and telemetry messages for operating the satellite. These protocols should follow _to some extent_ guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
 
 
 * ___Engineering Data Uplink___
@@ -29,7 +29,7 @@ These are intended as the engineering command, control and telemetry messages fo
    -- TBD on S-Band
 
 ## Onboard protocols
-These messages are used between subsystems on the spacecraft. They are not the be ever sent over the radio. There is no encryption or authentication. These protocols should follow to some extent guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
+These messages are used between subsystems on the spacecraft. They are not ever to be sent over the radio. There is no encryption or authentication. These protocols should follow _to some extent_ guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
 
 * ___C3 to xxx over CAN___
   -- TBD
