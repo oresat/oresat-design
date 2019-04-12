@@ -24,7 +24,10 @@ These are intended as the engineering command, control and telemetry messages fo
    
 * ___Engineering Data Downlink___
    -- This is the data format of the engineering downlink sent from the spacecraft on UHF for response to control and downlink of stored data. The stored data would include various portions of acquired data or more detailed telemetry. These messages are to be authenticated, but no encryption at all is permitted. There will be a mechanism of error detection and forward error correction.
-   
+
+#### Protocols deemed experimental
+   -- These are intended as the DxWiFi experiment and are mostly TBD at this time.
+
 * ___DxWiFi Uplink___
    -- TBD on S-Band;
 
