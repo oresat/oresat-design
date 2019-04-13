@@ -39,10 +39,10 @@ These are intended as the engineering command, control and telemetry messages fo
 ## Onboard protocols
 These messages are used between subsystems on the spacecraft. They are not ever to be sent over the radio. There is no encryption or authentication. These protocols should follow _to some extent_ guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
 
-* ___C3 to XXX___
+* ___C3 to XXX (critical subsystem only)___
   -- TBD on CAN 1; There will be a mechanism of error detection and request for retransmission.
 
-* ___XXX to C3___
+* ___XXX to C3 (critical subsystem only)___
   -- TBD on CAN 1; There will be a mechanism of error detection and request for retransmission.
 
 * ___C3 to YYY___
