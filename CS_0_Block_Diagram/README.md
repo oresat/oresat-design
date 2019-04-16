@@ -1,7 +1,7 @@
 ## CS-0 Block diagrams
 
 ### Current version
-* Rev 3.3 is 15-Apr-2019; Source is Lucid Charts under account <cory27@pdx.edu>.
+* Rev 3.3 block diagram is 15-Apr-2019; Source is Lucid Charts under account <cory27@pdx.edu>.
 ### Older versions
 * Rev 2 block diagram is pre CSLI application time period; Source is unknown.
 * Rev 3.0 block diagram is the whiteboard version starting around 29-Sep-2017; Source is the Visio file pushed here.
