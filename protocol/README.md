@@ -12,7 +12,9 @@ These are intended to give beacon data to the general public for amateur radio o
    -- This is the Morse Code message beacon sent at 10 wpm from the spacecraft on the UHF downlink frequency during 10 minute periodic telemetry times.
 
 * ___AX.25 Packet Protocol___
-   -- This is the AX.25 digital packet radio beacon sent from the spacecraft on the UHF downlink frequency using 9600 bit/sec G3RUH FSK modulation and whitening, no FEC, no encryption, during 10 minute periodic telemetry times. This emission comes just after the CW beacon.
+   -- This is the AX.25 digital packet radio beacon sent from the spacecraft on the UHF downlink frequency using 9600 bit/sec
+G3RUH FSK modulation and whitening, no FEC, no encryption, during 10 minute periodic telemetry times. This emission comes just
+after the periodic CW beacon.
 
 
 
