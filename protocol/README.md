@@ -37,6 +37,8 @@ These are intended as the engineering command, control and telemetry messages fo
    -- TBD on S-Band; This is a BPSK downlink with a frame format that closely resembles 802.11b. The data frames sent will be initiated by data requests on the Engineering Control channel and contain large quantities of bulk mission data. A second function will be the downlink portion the missions DxWiFi experiment.
 
 
+![OreSat Protocols](https://github.com/oresat/oresat-design/protocol/blob/master/20190715_131244.jpg)
+
 
 ## Onboard protocols
 These messages are used between subsystems on the spacecraft. They are not ever to be sent over the radio. There is no encryption or authentication. These protocols should follow _to some extent_ guidelines provided by CCSDS. https://public.ccsds.org/Publications/default.aspx
