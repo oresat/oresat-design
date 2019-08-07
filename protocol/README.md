@@ -38,6 +38,7 @@ These are intended as the engineering command, control and telemetry messages fo
 
 
 ![OreSat Protocols](https://github.com/oresat/oresat-design/protocol/blob/master/20190715_131244.jpg)
+![OreSat Protocols](https://github.com/oresat/oresat-design/edit/gh-pages/protocol/20190715_131244.jpg)
 
 
 ## Onboard protocols
