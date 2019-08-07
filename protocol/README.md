@@ -36,9 +36,7 @@ These are intended as the engineering command, control and telemetry messages fo
 * ___Bulk Data Downlink___
    -- TBD on S-Band; This is a BPSK downlink with a frame format that closely resembles 802.11b. The data frames sent will be initiated by data requests on the Engineering Control channel and contain large quantities of bulk mission data. A second function will be the downlink portion the missions DxWiFi experiment.
 
-
-![OreSat Protocols](https://github.com/oresat/oresat-design/protocol/blob/master/20190715_131244.jpg)
-![OreSat Protocols](https://github.com/oresat/oresat-design/edit/gh-pages/protocol/20190715_131244.jpg)
+![OreSat Protocols](https://github.com/oresat/oresat-design/protocol/20190715_131244.jpg)
 
 
 ## Onboard protocols
