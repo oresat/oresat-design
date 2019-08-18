@@ -1,7 +1,7 @@
 # Description of protocols used on CS-0
 
 ## Over-the-air protocols
-These protocols are used for communications between the spacecraft and the ground. By requirements of international treaty, these protocols must adhere to the requirements of described by the IARU <http://www.iaru.org/satellite.html> and are to be published with the request to coordinate frequencies. Only the encryption and message format of the uplink control is held in confidence with the IARU and ITU. All other protocol information is to be open to the amateur community.
+These protocols are used for communication between the spacecraft and the ground. By requirements of international treaty, these protocols must adhere to the requirements described by the IARU <http://www.iaru.org/satellite.html> and are to be published with the request to coordinate frequencies. Only the encryption and parts of the message format for the uplink control is held in confidence with the IARU and ITU. All other protocol information is to be open to the amateur community.
 
 
 
