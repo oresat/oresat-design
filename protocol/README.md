@@ -13,8 +13,7 @@ These are intended to give beacon data to the general public for amateur radio o
 
 * ___AX.25 Packet Protocol___ (Circuit 2)
    -- This is the AX.25 digital packet radio beacon sent from the spacecraft on the UHF downlink frequency using 9600 bit/sec
-G3RUH FSK modulation and whitening, no FEC, no encryption, during 10 minute periodic telemetry times. This emission comes just
-after the periodic CW beacon.
+G3RUH FSK modulation and whitening, no FEC, no encryption, with the OreSat telemetry encoded in an APRS message, sent during 10 minute periodic telemetry times. This emission comes just after the periodic CW beacon.
 
 
 
