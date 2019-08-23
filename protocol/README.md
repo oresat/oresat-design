@@ -20,10 +20,10 @@ G3RUH FSK modulation and whitening, no FEC, no encryption, with the OreSat telem
 #### Protocols intended for OreSat only
 These are intended as the engineering command, control and telemetry messages for operating the satellite. These protocols should follow _to some extent_ guidelines provided by CCSDS <https://public.ccsds.org/Publications/default.aspx>, and must adhere to the requirements of international treaty as described by the IARU <http://www.iaru.org/satellite.html>. The protocols physical layer is an emission of specifically GMSK modulation with a BT of 0.3 on both up and down links.
 
-* ___Engineering Data Downlink___ (Circuit 3 and 5)
+* ___Engineering Data Downlink___ (Circuit edges 3 to 5)
    -- This is the data format of the engineering downlink sent from the spacecraft on UHF for response to control and downlink of stored data. The stored data would include various portions of acquired data or more detailed telemetry. These messages are to be authenticated, but no encryption at all is permitted. There will be a mechanism of error detection and possibly forward error correction.
  
-* ___Engineering Data Uplink___ (Circuit 4 and 6)
+* ___Engineering Data Uplink___ (Circuit edges 6 to 4)
    -- This is the data format of the engineering uplink sent from the ground station on the L-Band for control of the satellite, for requesting a downlink of stored data, or for uploading new firmware images. Several components of these messages must be encrypted, and all of the messages are to be authenticated. There will be a mechanism of error detection and possibly forward error correction.
    
 
