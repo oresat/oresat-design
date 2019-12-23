@@ -1,4 +1,4 @@
-# Description of protocols used on CS-0
+# Description of protocols used on ORESAT1
 
 ## Over-the-air protocols
 These protocols are used for communication between the spacecraft and the ground. International treaty states that these protocols must adhere to the requirements described by the IARU <http://www.iaru.org/satellite.html> and are to be published with the request to coordinate frequencies. Only the encryption and parts of the message format for the uplink control is held in confidence with the IARU and ITU. All other protocol information is to be open to the amateur community.
